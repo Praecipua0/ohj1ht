@@ -1,51 +1,29 @@
 # Harjoitustyön suunnitelma
 
-(Täydennä oman pelisi tiedot tähän tiedostoon muokkaamalla 
-tiedostoa tekstieditorissa. Käytä [Markdown-syntaksia](https://about.gitlab.com/handbook/markdown-guide/).
-Poista sitten *kaikki* suluilla merkityt kohdat.)
+
 
 ## Tietoja 
 
-Tekijä: (Etunimi Sukunimi)
+Tekijä: Lassi Rainio
 
-Työ git-varaston osoite: <https://gitlab.jyu.fi/anlakane/ohj1ht> (*Korvaa* tämä osoite oman git-varastosi osoitteella)
+Työ git-varaston osoite: <https://github.com/Praecipua0/ohj1ht>
 
-Pelin nimi: (Nimi)
+Pelin nimi: SpaceArcade
 
-Pelialusta: Windows/macOS/Linux (Valitse alusta)
+Pelialusta: Windows
 
-Pelaajien lukumäärä: 1/2/3/4 (Valitse pelaajien lukumäärä)
+Pelaajien lukumäärä: 1
 
 ## Pelin tarina
 
-(Pelin tarina.)
 
 ## Pelin idea ja tavoitteet
 
-(Pelin idea ja tavoitteet.)
+Lennä, Ammu, Selviydy.
 
 ## Hahmotelma pelistä
 
-(Kun olet lisännyt suunnitelmakuvan tähän hakemistoon, linkitä se tähän alle. Alla on esimerkkikuvan linkitys.)
 
-![Esimerkkikuva](esimerkkikuva.png "Esimerkkikuva")
 
 ## Toteutuksen suunnitelma
 
-Helmikuu
-
-- (Tavoite 1)
-- (Tavoite 2)
-- (Tavoite 3)
-
-Maaliskuu
-
-- (Tavoite 1)
-- (Tavoite 2)
-- (Tavoite 3)
-
-Jos aikaa jää
-
-- (Tavoite 1)
-- (Tavoite 2)
-- (Tavoite 3)
