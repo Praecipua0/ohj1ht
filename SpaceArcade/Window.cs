@@ -16,8 +16,10 @@ namespace SpaceArcade
         private int vertexBufferHandle;
         private int vertexArrayHandle;
         private int elementBufferHandle;
-        float[] testTriangle = TestObject.testTriangle;
-        uint[] indicies = TestObject.indicies;
+        //float[] testTriangle = TestObject.testTriangle;
+        //uint[] indicies = TestObject.indicies;
+        float[] tieAdvanced = TieAdvanced.tieAdvanced;
+        uint[] indicies = TieAdvanced.indicies;
 
         private float rotZ = 0.0f;
         private float rotX = 0.0f;
@@ -34,11 +36,11 @@ namespace SpaceArcade
         Vector3 front = new Vector3(0.0f, 0.0f, -1.0f);
         Vector3 up = new Vector3(0.0f, 1.0f, 0.0f);
 
-        public Window(int width = 1440, int height = 1080)
+        public Window(int width = 1440, int height = 1080, int refreshRate = 60)
           : base(
             new GameWindowSettings()
             {
-                UpdateFrequency = 144,
+                UpdateFrequency = refreshRate,
 
             },
             new NativeWindowSettings()
@@ -73,7 +75,7 @@ namespace SpaceArcade
 
             this.vertexBufferHandle = GL.GenBuffer();
             GL.BindBuffer(BufferTarget.ArrayBuffer, this.vertexBufferHandle);
-            GL.BufferData(BufferTarget.ArrayBuffer, testTriangle.Length * sizeof(float), testTriangle, BufferUsageHint.StaticDraw);
+            GL.BufferData(BufferTarget.ArrayBuffer, tieAdvanced.Length * sizeof(float), tieAdvanced, BufferUsageHint.StaticDraw);
             GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
 
             this.vertexArrayHandle = GL.GenVertexArray();
@@ -156,11 +158,13 @@ namespace SpaceArcade
             //tiePosZ = -4-4*MathF.Cos(tieSpeed * time);
 
             //Console.WriteLine(time);
-            Console.WriteLine(1/UpdateTime);
+            int fps = (int)(1 / UpdateTime) + 1;
+            Console.WriteLine("Fps: " + fps);
 
             //rotX = time;
             rotY = -1.57f + time;
             //rotZ = time;
+
 
             //rotZ += 0.01f;
             //rotX += 0.01f;
@@ -193,7 +197,7 @@ namespace SpaceArcade
             Matrix4 view = Matrix4.LookAt(position, position + front, up);
 
 
-            Matrix4 projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(60.0f), 4 / 3, 0.1f, 100.0f);
+            Matrix4 projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(60.0f), 4.0f/3.0f, 0.1f, 100.0f);
             
 
             Matrix4 translation = Matrix4.CreateTranslation(tiePosX, 0.0f, tiePosZ);

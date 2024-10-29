@@ -29,3 +29,4 @@ C:\Users\Lassi\source\repos\SpaceArcade\SpaceArcade\obj\Release\net8.0\refint\Sp
 C:\Users\Lassi\source\repos\SpaceArcade\SpaceArcade\obj\Release\net8.0\SpaceArcade.pdb
 C:\Users\Lassi\source\repos\SpaceArcade\SpaceArcade\obj\Release\net8.0\SpaceArcade.genruntimeconfig.cache
 C:\Users\Lassi\source\repos\SpaceArcade\SpaceArcade\obj\Release\net8.0\ref\SpaceArcade.dll
+C:\Users\Lassi\source\repos\SpaceArcade\SpaceArcade\obj\Release\net8.0\SpaceArcade.sourcelink.json

@@ -13,11 +13,11 @@ namespace SpaceArcade
         const float colorG = 1.0f;
         const float colorB = 0.0f;
 
-        const float v1 = 0.50f;
-        const float v2 = 0.25f;
+        const float v1 = 0.60f;     //0.50f
+        const float v2 = 0.35f;     //0.25f
         const float v3 = 0.75f;
 
-        const float r1 = v1*0.25f;
+        const float r1 = 0.50f*0.25f;
         const float r2 = 0.15f;
         const float r3 = 0.20f;
         const float r4 = 0.20f;
@@ -27,6 +27,7 @@ namespace SpaceArcade
         const float t2 = 0.22f;
 
         const float s1 = 0.25f;
+        const float s2 = 1.2f;
 
         const float cos60 = 0.500f;
         const float sin60 = 0.866f;
@@ -90,20 +91,20 @@ namespace SpaceArcade
 
                0.0f,        r2,         0.20f,      colorR, colorG, colorB,             //38
                r2*sin45,    r2*sin45,   0.20f,      colorR, colorG, colorB,             //39
-               r2,          0,          0.20f,      colorR, colorG, colorB,             //40
+               r2,          0.0f,       0.20f,      colorR, colorG, colorB,             //40
                r2*sin45,    -r2*sin45,  0.20f,      colorR, colorG, colorB,             //41
                0.0f,        -r2,        0.20f,      colorR, colorG, colorB,             //42
                -r2*sin45,   -r2*sin45,  0.20f,      colorR, colorG, colorB,             //43
-               -r2,         0,          0.20f,      colorR, colorG, colorB,             //44
+               -r2,         0.0f,       0.20f,      colorR, colorG, colorB,             //44
                -r2*sin45,   r2*sin45,   0.20f,      colorR, colorG, colorB,             //45
 
                0.0f,        r3,         0.15f,      colorR, colorG, colorB,             //46
                r3*sin45,    r3*sin45,   0.15f,      colorR, colorG, colorB,             //47
-               r3,          0,          0.15f,      colorR, colorG, colorB,             //48
+               r3,          0.0f,       0.15f,      colorR, colorG, colorB,             //48
                r3*sin45,    -r3*sin45,  0.15f,      colorR, colorG, colorB,             //49
                0.0f,        -r3,        0.15f,      colorR, colorG, colorB,             //50
                -r3*sin45,   -r3*sin45,  0.15f,      colorR, colorG, colorB,             //51
-               -r3,         0,          0.15f,      colorR, colorG, colorB,             //52
+               -r3,         0.0f,       0.15f,      colorR, colorG, colorB,             //52
                -r3*sin45,   r3*sin45,   0.15f,      colorR, colorG, colorB,             //53
 
                // Hull
@@ -111,11 +112,11 @@ namespace SpaceArcade
                // Back 1
                0.0f,        r2,         -0.20f,     colorR, colorG, colorB,             //54
                r2*sin45,    r2*sin45,   -0.20f,     colorR, colorG, colorB,             //55
-               r2,          0,          -0.20f,     colorR, colorG, colorB,             //56
+               r2,          0.0f,       -0.20f,     colorR, colorG, colorB,             //56
                r2*sin45,    -r2*sin45,  -0.20f,     colorR, colorG, colorB,             //57
                0.0f,        -r2,        -0.20f,     colorR, colorG, colorB,             //58
                -r2*sin45,   -r2*sin45,  -0.20f,     colorR, colorG, colorB,             //59
-               -r2,         0,          -0.20f,     colorR, colorG, colorB,             //60
+               -r2,         0.0f,       -0.20f,     colorR, colorG, colorB,             //60
                -r2*sin45,   r2*sin45,   -0.20f,     colorR, colorG, colorB,             //61
 
 
@@ -124,11 +125,11 @@ namespace SpaceArcade
 
                0.0f,        r4,         -0.15f,     colorR, colorG, colorB,             //63
                r4*sin45,    r4*sin45,   -0.15f,     colorR, colorG, colorB,             //64
-               r4,          0,          -0.15f,     colorR, colorG, colorB,             //65
+               r4,          0.0f,       -0.15f,     colorR, colorG, colorB,             //65
                r4*sin45,    -r4*sin45,  -0.15f,     colorR, colorG, colorB,             //66
                0.0f,        -r4,        -0.15f,     colorR, colorG, colorB,             //67
                -r4*sin45,   -r4*sin45,  -0.15f,     colorR, colorG, colorB,             //68
-               -r4,         0,          -0.15f,     colorR, colorG, colorB,             //69
+               -r4,         0.0f,       -0.15f,     colorR, colorG, colorB,             //69
                -r4*sin45,   r4*sin45,   -0.15f,     colorR, colorG, colorB,             //70
 
                // Back Top
@@ -372,8 +373,3 @@ namespace SpaceArcade
         };
     }
 }
-
-// Positions        // Colors
-             //   0.0f,  0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  // Vertex 1: red
-              // -0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  // Vertex 2: green
-               // 0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f   // Vertex 3: blue

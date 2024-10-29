@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpaceArcade")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e42c86faf9b9b791b5ac4273f9163421e389506f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3db68de653934f63904b9768ae1836b5ca29e356")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpaceArcade")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpaceArcade")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
